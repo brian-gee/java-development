@@ -104,7 +104,7 @@ public class Console {
             } else // show error if users enters anything other than y/Y or n/N
                 if (bl.isEmpty()) { // show error if entry is blank
                     System.out.print("Error! This entry is required. Try again.\n");
-                } else System.out.print("Error! Entry Must be 'w' / 'd'. Try again.\n");
+                } else System.out.print("Error! Entry Must be 'b' / 'l'. Try again.\n");
         }
     }
 
@@ -121,7 +121,7 @@ public class Console {
             } else // show error if users enters anything other than y/Y or n/N
                 if (rps.isEmpty()) { // show error if entry is blank
                     System.out.print("Error! This entry is required. Try again.\n");
-                } else System.out.print("Error! Entry Must be 'c' / 's'. Try again.\n");
+                } else System.out.print("Error! Entry Must be 'r' / 'p' / 's'. Try again.\n");
         }
     }
 }

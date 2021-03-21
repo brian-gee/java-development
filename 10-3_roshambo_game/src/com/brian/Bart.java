@@ -2,8 +2,12 @@ package com.brian;
 
 public class Bart extends Player {
 
+    public Bart() {
+       this.setName("Bart");
+    }
+
     @Override
-    String generateRoshambo() {
-        return Roshambo.ROCK.toString();
+    public String generateRoshambo() {
+        return getName() + ": " + Roshambo.ROCK.toString();
     }
 }

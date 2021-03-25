@@ -6,30 +6,6 @@ import java.util.Scanner;
 public class Console {
     private static Scanner sc = new Scanner(System.in);
 
-    public String getString(String prompt) {
-        System.out.print(prompt);
-        String s = sc.next();
-        sc.nextLine();
-        return s;
-    }
-
-    public int getInt(String prompt, int min) {
-        while (true) {
-            int i;
-            try {
-                System.out.print(prompt);
-                i = sc.nextInt();
-                if (i >= min) {
-                    return i;
-                } else
-                    System.out.println("Error! Invalid integer. Try again.");
-            } catch (InputMismatchException e) {
-                sc.next();
-                System.out.println("Error! Invalid integer. Try again.");
-            }
-        }
-    }
-
     public int getInt(String prompt, int min, int max) {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -48,41 +24,6 @@ public class Console {
         }
     }
 
-    public double getDouble(String prompt, int min) {
-        while (true) {
-            double i;
-            try {
-                System.out.print(prompt);
-                i = sc.nextDouble();
-                if (i >= min) {
-                    return i;
-                } else {
-                    System.out.println("Error! Invalid integer. Try again.");}
-            } catch (InputMismatchException e) {
-                sc.next();
-                System.out.println("Error! Invalid integer. Try again.");
-
-            }
-        }
-    }
-
-    public double getDouble(String prompt, int min, int max) {
-        while (true) {
-            double i;
-            try {
-                System.out.print(prompt);
-                i = sc.nextDouble();
-                if (i >= min && i <= max) {
-                    return i;
-                } else {
-                    System.out.println("Error! Invalid integer. Try again.");}
-            } catch (InputMismatchException e) {
-                sc.next();
-                System.out.println("Error! Invalid integer. Try again.");
-            }
-        }
-    }
-
     public String getContinueString() {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -97,33 +38,4 @@ public class Console {
         }
     }
 
-    public String getBL(String prompt) {
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            System.out.print(prompt);
-            String bl = sc.nextLine();
-            if (bl.equals("b") || bl.equals("l")) {
-                return bl;
-            } else {
-                if (bl.isEmpty()) { // show error if entry is blank
-                    System.out.print("Error! This entry is required. Try again.\n");
-                } else System.out.print("Error! Entry Must be 'b' / 'l'. Try again.\n");
-            }
-        }
-    }
-
-    public String getRPS(String prompt) {
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            String rps = sc.nextLine();
-
-            if (rps.equals("r") || rps.equals("p") || rps.equals("s")){
-                return rps;
-            } else {
-                if (rps.isEmpty()) {
-                    System.out.print("Error! This entry is required. Try again.\n");
-                } else System.out.print("Error! Entry Must be 'r' / 'p' / 's'. Try again.\n");
-            }
-        }
-    }
 }

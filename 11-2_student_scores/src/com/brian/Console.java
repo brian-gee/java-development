@@ -6,6 +6,18 @@ import java.util.Scanner;
 public class Console {
     private static Scanner sc = new Scanner(System.in);
 
+    public String getString(String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            String str = sc.nextLine();
+            if (!str.isEmpty()) {
+                return str;
+            } else {
+                System.out.print("Error! This entry is required. Try again.\n");
+            }
+        }
+    }
+
     public int getInt(String prompt, int min, int max) {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -23,19 +35,4 @@ public class Console {
             }
         }
     }
-
-    public String getContinueString() {
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            System.out.print("\nAnother player? (y/n): ");
-            String cont = sc.nextLine();
-            if (cont.equals("y") || cont.equals("n") || cont.equals("Y") || cont.equals("N")) {
-                return cont;
-            } else
-                if (cont.isEmpty()) {
-                    System.out.print("Error! This entry is required. Try again.");
-                } else System.out.print("Error! Entry Must be 'y' or 'n'. Try again.");
-        }
-    }
-
 }

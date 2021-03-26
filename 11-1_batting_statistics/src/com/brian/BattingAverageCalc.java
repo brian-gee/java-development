@@ -1,9 +1,11 @@
 package com.brian;
 
 
+import java.text.DecimalFormat;
+
 public class BattingAverageCalc {
-    String cont = "y";
-    Console c = new Console();
+    private String cont = "y";
+    private Console c = new Console();
 
     public void calc() {
         System.out.println("Welcome to the Batting Average Calculator\n");
@@ -11,10 +13,12 @@ public class BattingAverageCalc {
             int num = c.getInt("Enter number of times at bat: ", 0, 30);
             calcArray(num);
             cont = c.getContinueString();
+            System.out.println();
         }
+        System.out.println("Bye!");
     }
 
-    public void calcArray(int x){
+    private void calcArray(int x){
         int [] resultAtBat = new int[x];
         int total = 0;
         double onBase = 0;
@@ -32,11 +36,17 @@ public class BattingAverageCalc {
         System.out.println("Slugging percent: " + calcSluggingPercent(total, x));
     }
 
-    public double calcBattingAverage(double totalAtBats, double onBase) {
-        return  onBase / totalAtBats;
+    private String calcBattingAverage(double totalAtBats, double onBase) {
+        return  formatNumber(onBase / totalAtBats);
     }
 
-    public double calcSluggingPercent(double totalBases, double atBats) {
-        return totalBases / atBats;
+    private String calcSluggingPercent(double totalBases, double atBats) {
+        return formatNumber(totalBases / atBats);
+    }
+
+    private String formatNumber(double num){
+        DecimalFormat df = new DecimalFormat("0.000");
+        String formattedNumber = df.format(num);
+        return formattedNumber;
     }
 }

@@ -1,2 +1,4 @@
-package com.brian;public class WizardInventory {
+package com.brian;
+
+public class WizardInventory {
 }

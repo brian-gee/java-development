@@ -1,2 +1,4 @@
-package com.brian;public class Item {
+package com.brian;
+
+public class Item {
 }

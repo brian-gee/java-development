@@ -12,11 +12,12 @@ public class Console {
             String str = sc.nextLine();
             if (!str.isEmpty()) {
                 return str;
-            } else {
+            } else if (str.isEmpty()) {
                 System.out.print("Error! This entry is required. Try again.\n");
-            }
+            } else System.out.print("Invalid input, please try again.");
         }
     }
+
 
     public int getInt(String prompt, int min, int max) {
         Scanner sc = new Scanner(System.in);

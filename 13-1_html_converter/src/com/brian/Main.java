@@ -13,7 +13,16 @@ public class Main {
                 "</ul>";
         System.out.println("INPUT\n" + html);
 
-        html = html.replaceAll("\\<.*?\\>", "");
-        System.out.println("\nOUTPUT\n" + html);
+        // Method to convert HTML to plain text and make list readable
+        convertHTML(html);
+
+    }
+
+    public static void convertHTML(String html) {
+        html = html.replaceAll("<ul>\n", "");
+        html = html.replaceAll("<li>", "*");
+        html = html.replaceAll(" +", "");
+        html = html.replaceAll("<.*?>", "");
+        System.out.println("\nOUTPUT\n" + html.trim());
     }
 }

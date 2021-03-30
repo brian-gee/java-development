@@ -3,6 +3,8 @@ package com.brian;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // Declare new WizardInventory as wi and run the program
+        WizardInventory wi = new WizardInventory();
+        wi.wizardInventory();
     }
 }

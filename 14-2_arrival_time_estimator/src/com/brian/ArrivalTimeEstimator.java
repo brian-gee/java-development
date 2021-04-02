@@ -31,7 +31,7 @@ public class ArrivalTimeEstimator {
         int minutes = (d.getNumOfMiles()%d.getMilesPerHour());
         d.setArrivalTime(d.getDepartureTime().plusHours(hours).plusMinutes(minutes));
 
-        System.out.println("Estimated travel time\n");
+        System.out.println("\nEstimated travel time");
         System.out.println("Hours: " + hours);
         System.out.println("Minutes: " + minutes);
         System.out.println("Estimated date of arrival: " + d.getDepartureDateFormatted());

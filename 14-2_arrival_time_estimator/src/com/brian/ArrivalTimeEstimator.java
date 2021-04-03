@@ -37,6 +37,4 @@ public class ArrivalTimeEstimator {
         System.out.println("Estimated date of arrival: " + d.getDepartureDateFormatted());
         System.out.println("Estimate time of arrival: " + d.getArrivalTimeFormatted());
     }
-
-
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a01bdef6-ee1f-4156-89ab-8e048f1c5088" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/ConversionTextFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/LengthConverterApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/conversion_types.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-1_customer_viewer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/Console.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerViewerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/brian/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/brian/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerViewerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Conversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1rBiuQQeRNhEPZndWP6fauUKx17" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.brian.CustomerViewerApp" />
+      <module name="16-1_customer_viewer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a01bdef6-ee1f-4156-89ab-8e048f1c5088" name="Default Changelist" comment="" />
+      <created>1618456107637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618456107637</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

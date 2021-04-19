@@ -6,7 +6,6 @@ public class CustomerViewerApp {
 
     public static void main(String args[]) {
         System.out.println("Customer Viewer");
-
         String cont = "y";
         while (cont.equals("y") || cont.equals("Y")) {
             displayCustomer();

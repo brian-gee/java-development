@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a01bdef6-ee1f-4156-89ab-8e048f1c5088" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/ConversionTextFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/LengthConverterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/conversion_types.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-1_customer_viewer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/Console.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/16-1_customer_viewer/com/brian/CustomerViewerApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/brian/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/brian/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/brian/CustomerViewerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Conversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../15-2_length_converter/src/com/brian/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/brian/CustomerViewerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/brian/CustomerViewerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +76,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class ConversionTextFile {
-    private List<Conversion> conversions = null;
-    private Path conversionsPath = null;
-    private File conversionsFile= null;
+    private List<Conversion> conversions;
+    private Path conversionsPath;
+    private File conversionsFile;
     private final String FIELD_SEP = "\t";
 
     public ConversionTextFile() {

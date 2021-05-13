@@ -1,28 +1,66 @@
 package com.brian;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class MusicDB {
 
-    private static Connection con;
-    private static boolean hasData = false;
+    private List<Artist> artists = new ArrayList<>();
+    private List<Album> albums = new ArrayList<>();
 
-    public MusicDB() {
-        try {
-            getConnection();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
+    public List<Artist> getArtists() {
+        artists = getAllArtists();
+        artists.sort(Comparator.comparing(Artist::getArtistName));
+        return artists;
     }
 
+    public List<Album> getAlbums() {
+        albums = getAllAlbums();
+        albums.sort(Comparator.comparing(Album::getAlbumName));
+        return albums;
+    }
 
-    private Connection getConnection() throws SQLException {
+    private List<Artist> getAllArtists() {
+        String sql = "SELECT ArtistID, Name FROM Artists";
+        List<Artist> l = new ArrayList<>();
+        try (Connection conn = this.connect();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql)){
+
+            while (rs.next()) {
+                Artist a = new Artist(rs.getInt("ArtistID"), rs.getString("Name"));
+                l.add(a);
+            }
+            return l;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private List<Album> getAllAlbums() {
+        String sql = "SELECT AlbumID, ArtistID, Name FROM Albums";
+        List<Album> l = new ArrayList<>();
+        try (Connection conn = this.connect();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)){
+
+            while (rs.next()) {
+                Album a = new Album(rs.getInt("AlbumId"), rs.getInt("ArtistID"), rs.getString("Name"));
+                l.add(a);
+            }
+            return l;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private Connection connect() throws SQLException {
         String dbUrl = "jdbc:sqlite:music_artists.sqlite";
         Connection connection = DriverManager.getConnection(dbUrl);
-        System.out.println("it worked");
         return connection;
     }
 }

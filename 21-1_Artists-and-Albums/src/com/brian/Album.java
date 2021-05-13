@@ -3,9 +3,9 @@ package com.brian;
 public class Album {
     private int albumID;
     private int artistID;
-    private int albumName;
+    private String albumName;
 
-    public Album(int albumID, int artistID, int albumName) {
+    public Album(int albumID, int artistID, String albumName) {
         this.albumID = albumID;
         this.artistID = artistID;
         this.albumName = albumName;
@@ -28,11 +28,11 @@ public class Album {
         this.artistID = artistID;
     }
 
-    public int getAlbumName() {
+    public String getAlbumName() {
         return albumName;
     }
 
-    public void setAlbumName(int albumName) {
+    public void setAlbumName(String albumName) {
         this.albumName = albumName;
     }
 }
